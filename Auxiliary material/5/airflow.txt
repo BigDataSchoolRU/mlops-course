@@ -1,0 +1,9 @@
+
+# Задаем connect в Airflow->Admin->Connections
+Conn Id=database_PG
+Conn Type=Postgres
+Host=your_host
+Schema=rainbow_database
+Login=unicorn_user
+Password=magical_password
+Port=5432

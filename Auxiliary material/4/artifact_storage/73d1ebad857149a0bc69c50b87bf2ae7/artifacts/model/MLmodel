@@ -1,0 +1,30 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.9.6
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.24.2
+run_id: 73d1ebad857149a0bc69c50b87bf2ae7
+signature:
+  inputs: '[{"name": "temp", "type": "double"}, {"name": "windspeed", "type": "double"},
+    {"name": "humidity", "type": "double"}, {"name": "precip", "type": "double"},
+    {"name": "pressure", "type": "double"}, {"name": "dailyprecip", "type": "double"},
+    {"name": "dailysnow", "type": "double"}, {"name": "fog", "type": "long"}, {"name":
+    "rain", "type": "long"}, {"name": "snow", "type": "long"}, {"name": "conditions_Clear",
+    "type": "integer"}, {"name": "conditions_Haze", "type": "integer"}, {"name": "conditions_Heavy
+    Rain", "type": "integer"}, {"name": "conditions_Heavy Snow", "type": "integer"},
+    {"name": "conditions_Light Freezing Fog", "type": "integer"}, {"name": "conditions_Light
+    Freezing Rain", "type": "integer"}, {"name": "conditions_Light Rain", "type":
+    "integer"}, {"name": "conditions_Light Snow", "type": "integer"}, {"name": "conditions_Mostly
+    Cloudy", "type": "integer"}, {"name": "conditions_Overcast", "type": "integer"},
+    {"name": "conditions_Partly Cloudy", "type": "integer"}, {"name": "conditions_Rain",
+    "type": "integer"}, {"name": "conditions_Scattered Clouds", "type": "integer"},
+    {"name": "conditions_Snow", "type": "integer"}, {"name": "conditions_Unknown",
+    "type": "integer"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-02-11 13:15:20.501746'

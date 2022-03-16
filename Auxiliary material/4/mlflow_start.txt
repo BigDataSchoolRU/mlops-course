@@ -1,0 +1,4 @@
+mlflow server --backend-store-uri postgresql://unicorn_user:magical_password@0.0.0.0/rainbow_database \
+                --default-artifact-root /Users/masterdelivery/Documents/ML_architecture/Курс/4_mlops_mlflow/artifact_storage \
+                --host 0.0.0.0 \
+                --port 5000

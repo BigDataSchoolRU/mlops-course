@@ -1,0 +1,27 @@
+#git log --pretty=format:"%h : %s" -5
+#git log --oneline master
+
+dvc init
+# Отключить сбор анонимной статистики использования
+#dvc config core.analytics false
+#git add .dvc\config
+dvc remote add -d remote_storage путь_к_dvc_remote(S3)
+
+#получаем файлы data\processed\train_weather.csv data\processed\test_weather.csv
+
+dvc add data\processed\train_weather.csv data\processed\test_weather.csv
+git add --all
+git commit -m "Experiment 1. Created train and test CSV files"
+dvc push
+
+#Иземеняем файлы data\processed\train_weather.csv data\processed\test_weather.csv
+#изменив train_size=0.8 и добавив новую фичу weather_roll_5
+
+dvc commit
+git add -all
+
+git commit -m "Experiment 2. Created train and test CSV files"
+dvc push
+
+#git checkout
+#dvc checkout
